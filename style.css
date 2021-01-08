@@ -2,7 +2,6 @@
 
 #prev,
 #next {
-    transform: translateY(-50%);
     color: #fff;
     background: #333;
     height: 50px;
