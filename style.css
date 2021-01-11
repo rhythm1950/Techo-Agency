@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:wht@400;700&display=swap');
 
-.btn:hover {
-    background: #333;
-}
-
 .slide-container {
     display: none;
 }
