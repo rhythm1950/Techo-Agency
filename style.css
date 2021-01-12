@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:wht@400;700&display=swap');
 
-.slide-container {
-    display: none;
-}
-
 .slide-container:nth-child(1) .slide {
     background: linear-gradient(90deg, #f9f9f9 70%, #ffff99 30.1%);
 }
