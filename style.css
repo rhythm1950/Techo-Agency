@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:wht@400;700&display=swap');
 
 .content {
-    flex: 1 1 350px;
     animation: slideContent .4s linear .6s backwards;
 }
 
