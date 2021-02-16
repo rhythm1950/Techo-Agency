@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:wht@400;700&display=swap');
 
-.container {
-    position: relative;
-}
-
 .container .slide-container .slide {
     min-height: 100vh;
     display: flex;
