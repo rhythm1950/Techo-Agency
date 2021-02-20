@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:wht@400;700&display=swap');
 
 .container .slide-container .slide {
-    align-items: center;
     flex-wrap: wrap;
     gap: 15px;
     padding: 20px 9%;
