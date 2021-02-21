@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:wht@400;700&display=swap');
+
 * {
     font-family: 'Nunito', sans-serif;
     margin: 0;
@@ -8,9 +9,11 @@
     border: none;
     text-transform: capitalize;
 }
+
 .container {
     position: relative;
 }
+
 .container .slide-container .slide {
     min-height: 100vh;
     display: flex;
@@ -20,38 +23,46 @@
     padding: 20px 9%;
     padding-bottom: 70px;
 }
+
 .content {
     flex: 1 1 350px;
     animation: slideContent .4s linear .6s backwards;
 }
+
 @keyframes slideContent {
-    0%{
+    0% {
         opacity: 0;
         transform: translateX(-50px);
     }
 }
+
 .image {
     flex: 1 1 500px;
     animation: slideImage .4s linear;
 }
+
 @keyframes slideImage {
-    0%{
+    0% {
         opacity: 0;
         transform: translateY(-50px);
     }
 }
+
 .image img {
     width: 100%;
 }
+
 .content h3 {
     font-size: 35px;
     color: #333;
 }
+
 .content p {
     font-size: 16px;
     color: #666;
     padding: 10px 0;
 }
+
 .btn {
     margin-top: 10px;
     display: inline-block;
@@ -60,25 +71,33 @@
     font-size: 17px;
     padding: 9px 40px;
 }
+
 .btn:hover {
     background: #333;
 }
+
 .slide-container {
     display: none;
 }
+
 .slide-container.active {
     display: block;
 }
+
 .slide-container:nth-child(1) .slide {
     background: linear-gradient(90deg, #f9f9f9 70%, #ffff99 30.1%);
 }
+
 .slide-container:nth-child(2) .slide {
     background: linear-gradient(90deg, #f9f9f9 70%, #ff9090 30.1%);
 }
+
 .slide-container:nth-child(3) .slide {
     background: linear-gradient(90deg, #f9f9f9 70%, #99bbff 30.1%);
 }
-#prev, #next {
+
+#prev,
+#next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -92,22 +111,27 @@
     cursor: pointer;
     font-weight: bolder;
 }
-#prev:hover, #next:hover {
+
+#prev:hover,
+#next:hover {
     background: #666;
 }
+
 #prev {
     left: 20px;
 }
+
 #next {
     right: 20px;
 }
+
 @media (max-width: 768px) {
     #prev {
         left: 0px;
         top: 60%;
     }
+
     #next {
         right: 0px;
-        top: 60%;
     }
 }
