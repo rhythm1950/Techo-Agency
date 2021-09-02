@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techo Agency</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="slide-container active">
+            <div class="slide">
+                <div class="content">
+                    <h3>1. Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid porro eos in debitis corporis
+                        quis aut minus reiciendis nemo qui sapiente incidunt doloribus voluptatem, doloremque aliquam
+                        placeat laudantium odio architecto totam id vel? Perspiciatis pariatur quis illum amet placeat
+                        alias.</p>
+                    <a href="#" class="btn">Contact Us</a>
+                </div>
+
+                <div class="image">
+                    <img src="images/Development-cuate.svg" alt="web design">
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <h3>2. App Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid porro eos in debitis corporis
+                        quis aut minus reiciendis nemo qui sapiente incidunt doloribus voluptatem, doloremque aliquam
+                        placeat laudantium odio architecto totam id vel? Perspiciatis pariatur quis illum amet placeat
+                        alias.</p>
+                    <a href="#" class="btn">Contact Us</a>
+                </div>
+
+                <div class="image">
+                    <img src="images/Responsive-cuate.svg" alt="app development">
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <h3>3. Digital Marketing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid porro eos in debitis corporis
+                        quis aut minus reiciendis nemo qui sapiente incidunt doloribus voluptatem, doloremque aliquam
+                        placeat laudantium odio architecto totam id vel? Perspiciatis pariatur quis illum amet placeat
+                        alias.</p>
+                    <a href="#" class="btn">Contact Us</a>
+                </div>
+
+                <div class="image">
+                    <img src="images/Web devices-cuate.svg" alt="digital marketing">
+                </div>
+            </div>
+        </div>
+        
+        <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
+        <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
+
+        </div>
+
+
+        <script>
+            let slides = document.querySelectorAll('.slide-container');
+            let index = 0;
+
+            function next() {
+                slides[index].classList.remove('active');
+                index = (index + 1) % slides.length;
+                slides[index].classList.add('active');
+            }
+            function prev() {
+                slides[index].classList.remove('active');
+                index = (index - 1 + slides.length) % slides.length;
+                slides[index].classList.add('active');
+            }
+
+            setInterval(next, 3000);
+        </script>
+
+</body>
+
+</html>
