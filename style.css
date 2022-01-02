@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:wht@400;700&display=swap');
 
 @media (max-width: 768px) {
-    #prev {
-        left: 0px;
-    }
 
     #next {
         right: 0px;
